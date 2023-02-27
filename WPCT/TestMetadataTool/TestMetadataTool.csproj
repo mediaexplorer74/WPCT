@@ -34,9 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Phone.Test.TestMetadata">
-      <HintPath>lib\Microsoft.Phone.Test.TestMetadata.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -75,6 +72,10 @@
     <ProjectReference Include="..\CabApiWrapper\CabApiWrapper.csproj">
       <Project>{adb8c411-2d3f-41ec-876b-e7a02b25187d}</Project>
       <Name>CabApiWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Phone.Test.TestMetadata\Microsoft.Phone.Test.TestMetadata.csproj">
+      <Project>{f1c0d026-cf7b-4080-a71a-69434d592cf7}</Project>
+      <Name>Microsoft.Phone.Test.TestMetadata</Name>
     </ProjectReference>
     <ProjectReference Include="..\Microsoft.Tools.IO\Microsoft.Tools.IO.csproj">
       <Project>{daae934f-87f5-4b5e-880b-089ac2262f69}</Project>
