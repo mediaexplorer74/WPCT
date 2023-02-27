@@ -1,4 +1,10 @@
-# Windows Phone Common Tools
+# Windows Phone Common Tools (WPCTools)
+
+My fork of Windows Phone Common Tools created by [Empyreal96](https://github.com/Empyreal96/). 
+
+## About the original
+
+"
 Compilable source of most .NET based tools and libraries from the Windows Phone Common Tools package (Windows 10 Kits). 
 
 - Referenced together to allow files to work together (If you use a custom exe with a stock library from the Kits you will get mismatched assembly error)
@@ -8,7 +14,7 @@ Compilable source of most .NET based tools and libraries from the Windows Phone 
 - Targets .NET Framework 4.6 with VS2019
 
 
-### Libraries:
+## Libraries:
 
 ```
 CabApiWrapper
@@ -61,3 +67,32 @@ WimInterop
 wpimage
 WPTCEditorV2
 ```
+"
+
+
+## My 2 cents
+- .NET 4.8 used;
+- This "external dlls" decompiled and "touched" by me a little:
+```
+ufphostm (experimental)
+ufphostm48 (.net4.8)
+Microsoft.Phone.Test.TestMetadata
+```
+;
+- All results of project compilation will be at ..\bin (at single "common" folder). 
+
+
+## Status
+- A slow researching this cool thing :)
+
+
+## Credits / Source 
+- https://github.com/Empyreal96/
+- https://github.com/Empyreal96/WP_Common_Tools
+
+
+## ..
+As is. No support. RnD only.
+
+## .
+[m][e] 2023
