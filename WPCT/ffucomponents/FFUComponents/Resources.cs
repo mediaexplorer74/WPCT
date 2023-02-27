@@ -23,7 +23,8 @@ namespace FFUComponents
 			{
 				if (resourceMan == null)
 				{
-					resourceMan = new ResourceManager("FFUComponents.Properties.Resources", typeof(Resources).Assembly);
+					resourceMan = new ResourceManager("FFUComponents.Properties.Resources", 
+						typeof(Resources).Assembly);
 				}
 				return resourceMan;
 			}

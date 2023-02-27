@@ -78,6 +78,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pkggen.cfg.xml" />
+    <Content Include="updatedll.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PkgCommonManaged\PkgCommonManaged.csproj">
