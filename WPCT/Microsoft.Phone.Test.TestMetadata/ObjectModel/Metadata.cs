@@ -4,8 +4,9 @@
 // MVID: 8D6FC749-8FAD-45FC-9FEA-2CC8150A9765
 // Assembly location: C:\Users\Admin\Desktop\d\Microsoft.Phone.Test.TestMetadata.dll
 
-using Microsoft.Tools.IO;
+//using Microsoft.Tools.IO;
 using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -71,7 +72,7 @@ namespace Microsoft.Phone.Test.TestMetadata.ObjectModel
         IgnoreWhitespace = true
       };
       settings.Schemas.Add(schema);
-      using (FileStream input = LongPathFile.Open(xmlFile, FileMode.Open, FileAccess.Read, FileShare.Read))
+      using (FileStream input = /*LongPath*/File.Open(xmlFile, FileMode.Open, FileAccess.Read, FileShare.Read))
       {
         using (XmlReader xmlReader = XmlReader.Create((Stream) input, settings))
         {

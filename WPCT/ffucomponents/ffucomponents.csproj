@@ -122,7 +122,7 @@
       <Project>{877515e4-001d-4905-9616-7574bc7876b3}</Project>
       <Name>ToolsCommon</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ufphostm48\ufphostm.csproj">
+    <ProjectReference Include="..\ufphostm\ufphostm.csproj">
       <Project>{abb9f266-d948-4c20-a0ea-681bbeedb023}</Project>
       <Name>ufphostm</Name>
     </ProjectReference>

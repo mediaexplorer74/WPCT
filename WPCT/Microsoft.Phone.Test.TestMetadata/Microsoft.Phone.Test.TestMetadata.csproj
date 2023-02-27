@@ -86,5 +86,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Schema\testmetadata.xsd" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Tools.IO\Microsoft.Tools.IO.csproj">
+      <Project>{daae934f-87f5-4b5e-880b-089ac2262f69}</Project>
+      <Name>Microsoft.Tools.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReflectionUtilities\ReflectionUtilities.csproj">
+      <Project>{28822914-35ca-43dc-8a41-05e397db2700}</Project>
+      <Name>ReflectionUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -74,12 +74,14 @@ WPTCEditorV2
 - .NET 4.8 used;
 - This "external dlls" decompiled and "touched" by me a little:
 ```
-ufphostm (experimental)
-ufphostm48 (.net4.8)
+ReflectionUtilities (with Microsoft.MetadataReader namespace)
+ufphostm (.net4.8)
 Microsoft.Phone.Test.TestMetadata
 ```
-;
+
 - All results of project compilation will be at ..\bin (at single "common" folder). 
+
+![Shot1](Images/shot1.png)
 
 
 ## Status

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Admin\Desktop\d\MetadataReader.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B96C1C4C-81EA-4683-BF1F-41173E3EBDA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>MetadataReader</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>8.1.1702.2001</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.MetadataReader</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayFabricatedConstructorInfo.cs" />
+    <Compile Include="ArrayFabricatedGetMethodInfo.cs" />
+    <Compile Include="ArrayFabricatedSetMethodInfo.cs" />
+    <Compile Include="ArrayFabricatedAddressMethodInfo.cs" />
+    <Compile Include="ArrayFabricatedMethodInfo.cs" />
+    <Compile Include="AssemblyFactory.cs" />
+    <Compile Include="CommonIdeHelper.cs" />
+    <Compile Include="AssemblyNameHelper.cs" />
+    <Compile Include="AssemblyRef.cs" />
+    <Compile Include="ConstructorInfoRef.cs" />
+    <Compile Include="CustomModifiers.cs" />
+    <Compile Include="DefaultFactory.cs" />
+    <Compile Include="DefaultUniverse.cs" />
+    <Compile Include="IReflectionFactory.cs" />
+    <Compile Include="GenericContext.cs" />
+    <Compile Include="CorCallingConvention.cs" />
+    <Compile Include="CorFileFlags.cs" />
+    <Compile Include="CorManifestResourceFlags.cs" />
+    <Compile Include="CorTypeAttr.cs" />
+    <Compile Include="HCORENUM.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="UnusedIntPtr.cs" />
+    <Compile Include="IMetadataImport.cs" />
+    <Compile Include="IMetadataImport2.cs" />
+    <Compile Include="UnmanagedStringMemoryHandle.cs" />
+    <Compile Include="AssemblyMetaData.cs" />
+    <Compile Include="IMetadataAssemblyImport.cs" />
+    <Compile Include="IMetadataTables.cs" />
+    <Compile Include="Loader.cs" />
+    <Compile Include="MetadataOnlyCommonArrayType.cs" />
+    <Compile Include="MetadataOnlyArrayType.cs" />
+    <Compile Include="MetadataOnlyVectorType.cs" />
+    <Compile Include="MetadataOnlyAssembly.cs" />
+    <Compile Include="MetadataOnlyCommonType.cs" />
+    <Compile Include="MetadataOnlyConstructorInfo.cs" />
+    <Compile Include="MetadataOnlyCustomAttributeData.cs" />
+    <Compile Include="MetadataOnlyEventInfo.cs" />
+    <Compile Include="MetadataOnlyFieldInfo.cs" />
+    <Compile Include="MetadataOnlyLocalVariableInfo.cs" />
+    <Compile Include="MetadataOnlyMethodBody.cs" />
+    <Compile Include="MetadataOnlyMethodBodyWorker.cs" />
+    <Compile Include="MetadataOnlyMethodInfo.cs" />
+    <Compile Include="MetadataOnlyModifiedType.cs" />
+    <Compile Include="MetadataOnlyModule.cs" />
+    <Compile Include="MetadataOnlyParameterInfo.cs" />
+    <Compile Include="MetadataOnlyPropertyInfo.cs" />
+    <Compile Include="MetadataOnlyTypeDef.cs" />
+    <Compile Include="MetadataOnlyTypeVariableRef.cs" />
+    <Compile Include="OpenGenericContext.cs" />
+    <Compile Include="ProxyGenericType.cs" />
+    <Compile Include="TypeProxy.cs" />
+    <Compile Include="MetadataOnlyTypeVariable.cs" />
+    <Compile Include="IMetadataExtensionsPolicy.cs" />
+    <Compile Include="MetadataExtensionsPolicy20.cs" />
+    <Compile Include="PseudoCustomAttributes.cs" />
+    <Compile Include="MethodFilter.cs" />
+    <Compile Include="SignatureComparer.cs" />
+    <Compile Include="NamedArgumentType.cs" />
+    <Compile Include="TypeSignatureDescriptor.cs" />
+    <Compile Include="MethodSignatureDescriptor.cs" />
+    <Compile Include="SignatureUtil.cs" />
+    <Compile Include="SignatureBlob.cs" />
+    <Compile Include="StringBuilderPool.cs" />
+    <Compile Include="SimpleParameterInfo.cs" />
+    <Compile Include="TypeNameQuoter.cs" />
+    <Compile Include="MetadataOnlyTypeReference.cs" />
+    <Compile Include="UnresolvedTypeName.cs" />
+    <Compile Include="TypeSpec.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Tools.IO\Microsoft.Tools.IO.csproj">
+      <Project>{daae934f-87f5-4b5e-880b-089ac2262f69}</Project>
+      <Name>Microsoft.Tools.IO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

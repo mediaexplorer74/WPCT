@@ -1,4 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
+﻿// BinaryFile.cs
 // Type: Microsoft.Phone.Test.TestMetadata.Helper.BinaryFile
 // Assembly: Microsoft.Phone.Test.TestMetadata, Version=8.1.1702.2001, Culture=neutral, PublicKeyToken=b3f029d4c9c2ec30
 // MVID: 8D6FC749-8FAD-45FC-9FEA-2CC8150A9765
@@ -89,12 +89,13 @@ namespace Microsoft.Phone.Test.TestMetadata.Helper
         HCORENUM hcorenum = new HCORENUM();
         int num1;
         uint num2;
-        objectForIunknown.EnumModuleRefs(ref hcorenum, ref num1, 1, ref num2);
+        objectForIunknown.EnumModuleRefs(ref hcorenum, out num1, 1, out num2);
         while (num2 > 0U)
         {
           StringBuilder stringBuilder = new StringBuilder(1024);
-          int num3;
-          objectForIunknown.GetModuleRefProps(num1, stringBuilder, stringBuilder.Capacity, ref num3);
+          int num3 = 0;
+          objectForIunknown.GetModuleRefProps(num1, stringBuilder, 
+              stringBuilder.Capacity, out num3);
           string str = stringBuilder.ToString();
           if (string.IsNullOrEmpty(LongPathPath.GetExtension(str)))
             str += ".dll";
@@ -104,7 +105,7 @@ namespace Microsoft.Phone.Test.TestMetadata.Helper
             Type = BinaryDependencyType.PlatfomInvoke
           };
           dependencyList.Add(executableDependency);
-          objectForIunknown.EnumModuleRefs(ref hcorenum, ref num1, 1, ref num2);
+          objectForIunknown.EnumModuleRefs(ref hcorenum, out num1, 1, out num2);
         }
       }
     }
