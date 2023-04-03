@@ -2,6 +2,7 @@
 
 My fork of Windows Phone Common Tools created by [Empyreal96](https://github.com/Empyreal96/). 
 
+
 ## About the original
 
 "
@@ -85,7 +86,8 @@ Microsoft.Phone.Test.TestMetadata
 
 
 ## Status
-- A slow researching this cool thing :)
+- I reset my work/job/task/branch.
+- Merge (sync) empyreal96:custom branch
 
 
 ## Credits / Source 
