@@ -82,7 +82,6 @@ Microsoft.Phone.Test.TestMetadata
 
 - All results of project compilation will be at ..\bin (at single "common" folder). 
 
-![Shot1](Images/shot1.png)
 
 
 ## Status
